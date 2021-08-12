@@ -20,3 +20,20 @@
     background-color:lemonchiffon;
     height:22vh;
 }
+.showContainer{
+    justify-content: space-between;
+    // margin-bottom:22vh;
+    
+}
+@keyframes slidein {
+    from {
+      margin-left: -120%;
+    }
+  
+    to {
+      margin-left:18%;
+    }
+  }
+.flyBuzz{
+    animation:slidein 5s ease-in-out ; 
+}

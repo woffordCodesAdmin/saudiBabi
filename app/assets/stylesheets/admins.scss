@@ -1,0 +1,22 @@
+// Place all the styles related to the Admins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+#alphaBox{
+    border:solid blue;
+    padding:8px;
+}
+.letterContainer{
+    // border:solid green;
+    margin-top:12em;
+}
+.displayLetter{
+    font-size:82px;
+    text-align:center;
+    padding:12px;
+    border-radius:50%;
+}
+.ltr{
+    border:solid red;
+    background-color:lemonchiffon;
+    height:22vh;
+}

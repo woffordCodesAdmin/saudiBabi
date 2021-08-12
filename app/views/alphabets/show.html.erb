@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Letter:</strong>
+  <%= @alphabet.letter %>
+</p>
+
+<p>
+  <strong>Keycode:</strong>
+  <%= @alphabet.keycode %>
+</p>
+
+<p>
+  <strong>Audio:</strong>
+  <%= @alphabet.audio %>
+</p>
+
+<%= link_to 'Edit', edit_alphabet_path(@alphabet) %> |
+<%= link_to 'Back', alphabets_path %>

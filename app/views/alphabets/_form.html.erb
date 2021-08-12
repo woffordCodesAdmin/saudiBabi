@@ -1,0 +1,32 @@
+<%= form_with(model: alphabet) do |form| %>
+  <% if alphabet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(alphabet.errors.count, "error") %> prohibited this alphabet from being saved:</h2>
+
+      <ul>
+        <% alphabet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :letter %>
+    <%= form.text_field :letter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :keycode %>
+    <%= form.text_field :keycode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :audio %>
+    <%= form.text_field :audio %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
